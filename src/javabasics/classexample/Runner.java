@@ -1,6 +1,6 @@
-package javabasics.runner;
+package javabasics.classexample;
 
-import javabasics.model.*;
+import javabasics.classexample.*;
 
 public class Runner {
     public static void main(String[] args) {

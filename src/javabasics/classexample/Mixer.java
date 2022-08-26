@@ -1,4 +1,4 @@
-package javabasics.model;
+package javabasics.classexample;
 
 //class is a keyword
 //Mixer is a class name
