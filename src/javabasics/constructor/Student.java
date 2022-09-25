@@ -10,7 +10,7 @@ public class Student {
 
     }
 
-    //this is a customized constructor. it is used to set the values to the object at the time of object creation
+    //this is a parameterized constructor. it is used to set the values to the object at the time of object creation
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
