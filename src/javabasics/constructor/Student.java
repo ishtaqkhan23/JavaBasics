@@ -7,7 +7,6 @@ public class Student {
 
     //this is a default constructor provided by java
     public Student() {
-
     }
 
     //this is a parameterized constructor. it is used to set the values to the object at the time of object creation

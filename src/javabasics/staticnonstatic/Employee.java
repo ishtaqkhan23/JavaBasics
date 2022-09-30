@@ -30,10 +30,9 @@ public class Employee {
     public static void main(String[] args) {
         System.out.println(Employee.companyName);
 
+        Employee.calculateAnnualSalary(12000);
+
         //System.out.println(Employee.employeeName);
-
-        calculateAnnualSalary(12000);
-
 
         Employee employee = new Employee();
         employee.employeeName = "Nawaz";
