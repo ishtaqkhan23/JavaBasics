@@ -16,12 +16,12 @@ public class IteratorConcurrentModificationException {
         Iterator<Integer> integerIterator1 = arrayIntegerList.iterator();
         Iterator<Integer> integerIterator2 = arrayIntegerList.iterator();
 
-        //reading next element from iterator 1
+        //reading next element using iterator 1
         System.out.println(integerIterator1.next());
-        //removing element from iterator 1
+        //removing element using iterator 1
         integerIterator1.remove();
 
-        //reading the next element from iterator 2
+        //reading the next element using iterator 2
         System.out.println(integerIterator2.next());
     }
 }
