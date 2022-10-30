@@ -44,11 +44,15 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
-//    @Override
-//    public int compareTo(Student anotherStudent) {
-//        return this.name.compareTo(anotherStudent.name);
-//    }
+    // for sorting only with student name
+    //    @Override
+    //    public int compareTo(Student anotherStudent) {
+    //        return this.name.compareTo(anotherStudent.name);
+    //    }
 
+    // for sorting only with student name and course
+    // first sorting will be performed on name
+    // and if there are same names for two students then sorting will be performed on course
     @Override
     public int compareTo(Student anotherStudent) {
         if(this.name.compareTo(anotherStudent.name) == 0) {
