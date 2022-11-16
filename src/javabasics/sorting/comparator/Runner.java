@@ -25,5 +25,13 @@ public class Runner {
         Collections.sort(employeeList, employeeNameComparator);
         System.out.println(employeeList);
 
+        //using comparator with TreeSet
+        Set<Employee> employeeSet = new TreeSet<>(employeeAgeComparator);
+        employeeSet.add(e1);
+        employeeSet.add(e2);
+        employeeSet.add(e3);
+        employeeSet.add(e4);
+        System.out.println(employeeList);
+
     }
 }
