@@ -9,7 +9,13 @@ public class Runner {
         Employee e3 = new Employee(3, "arif", 30, 3000);
         Employee e4 = new Employee(4, "pasha", 18, 1000);
 
-        List<Employee> employeeList = Arrays.asList(e1, e2, e3, e4);
+        List<Employee> employeeList = new LinkedList<>();
+        employeeList.add(e1);
+        employeeList.add(e2);
+        employeeList.add(e3);
+        employeeList.add(e4);
+
+        //List<Employee> employeeList = Arrays.asList(e1, e2, e3, e4);
 
         Comparator<Employee> employeeAgeComparator = new EmployeeAgeComparator();
         Collections.sort(employeeList, employeeAgeComparator);
