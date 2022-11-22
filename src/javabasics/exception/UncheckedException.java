@@ -13,6 +13,19 @@ public class UncheckedException {
 
         //throws NumberFormatException
         String str2 = "nawaz";
-        System.out.println(convertStringToInteger(str2));
+        try {
+            System.out.println(convertStringToInteger(str2));
+        } catch (NumberFormatException exp) {
+            System.out.println("Please pass only numbers. Characters are not allowed here.");
+        }
+
+        System.out.println("after numberfarmatexp");
+//        //ArrayIndexOutOfBoundsException
+//        int[] intArr = new int[10];
+//        intArr[10] = 1;
+//
+//        //NullPointerException
+//        String name = null;
+//        name.length();
     }
 }
