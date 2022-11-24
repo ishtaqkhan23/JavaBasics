@@ -6,6 +6,7 @@ public class DatabaseConnection implements AutoCloseable {
 
     public DatabaseConnection() {
         this.connection = "Established";
+        System.out.println(this.connection);
     }
 
     @Override

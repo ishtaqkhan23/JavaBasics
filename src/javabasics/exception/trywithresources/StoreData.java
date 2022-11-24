@@ -6,14 +6,12 @@ public class StoreData {
 //        try {
 //            //step 1: establish connection to db
 //            DatabaseConnection databaseConnection = new DatabaseConnection();
-//            System.out.println(databaseConnection.connection);
 //
 //            //step 2: perform db operations
 //            //logic to store data in db
 //
 //            //step 3: close db connections
 //            databaseConnection.close();
-//            System.out.println(databaseConnection.connection);
 //        } catch (Exception e) {
 //            System.out.println("Unknown exception occurred.");
 //        }
@@ -21,9 +19,10 @@ public class StoreData {
         //try with resource
         //step 1: establish connection to db
         try(DatabaseConnection databaseConnection = new DatabaseConnection();) {
-            System.out.println(databaseConnection.connection);
             //step 2: perform db operations
             //logic to store data in db
+
+            //step 3: close db connections. This step will be automatically taken care in try with resources
         }
 
         //Note: try without catch and finally is possible only when we use try with resources
