@@ -1,19 +1,20 @@
 package javabasics.wrapperclasses;
 
 public class Employee {
+    //String is a wrapper class
     String employeeName;
 
     //primitive
     int age;
 
-    //non-premitive
+    //non-primitive
     //Wrapper class
     Integer employeeAge;
 
     //primitive
     boolean hasBankAccount;
 
-    //primitive
+    //non-primitive
     //Wrapper class
     Boolean empHasBankAccount;
 
