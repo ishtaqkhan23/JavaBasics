@@ -31,7 +31,7 @@ public class FindMostOccurredDupInt {
         int highestDuplicateVal = 0;//3
         int highestDupKey = 0;//1
         for (Map.Entry<Integer,Integer> entry: inputMapWithValueCount.entrySet()){
-            if(highestDuplicateVal < entry.getValue()){ // 1 -> 0 <3
+            if(entry.getValue() > highestDuplicateVal){ // 1 => 0 > 3
                 highestDuplicateVal = entry.getValue();
                 highestDupKey = entry.getKey();
             }
